@@ -1,0 +1,213 @@
+/* colors -> https://coolors.co/e54b4b-ebebd3-464655-e4b363-e8e9eb */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+header {
+  background-size: 1900px;
+  padding: 2.4em 0;
+  position: relative;
+  height: 20px;
+  zoom:90%;
+  background: rgba(42,115,41,0.37);
+
+
+}
+
+header::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.logo {
+  float: left;
+  margin-top: 3px;
+  text-transform: uppercase;
+  position: absolute;
+  top:3px;
+  left:15px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+
+
+.logo span {
+  font-weight: 400;
+
+}
+.site-nav span{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+.site-nav {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: rgba(255, 255, 255, 1);
+
+ -webkit-clip-path: circle(0px at top right);
+  -webkit-transition: clip-path ease-in-out 700ms;
+  -webkit-transition:clip-path ease-in-out 700ms;
+  z-index: 10;
+  border-radius: 0 0 0 20px ;
+
+     /*display: none;*/
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.site-nav--open {
+  -webkit-clip-path: circle(150% at top right);
+     /*display: block;*/
+}
+
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 10;
+
+}
+
+.site-nav li {
+  border-bottom: 1px solid #575766;
+
+
+}
+
+.site-nav li:last-child {
+  border-bottom: none;
+
+}
+
+.site-nav a {
+  color: rgb(0, 0, 0);
+  display: block;
+  padding: 2em 4em 2em 1.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  z-index: 10;
+
+}
+/*.site-nav a:last-of-type:focus{*/
+  /*border-radius: 0 0 0 20px*/
+/*}*/
+.site-nav a:hover,
+.site-nav a:focus{
+  z-index: 10;
+  color: #53b8a0;
+
+}
+
+
+
+
+.site-nav--icon {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-right: 1em;
+  width: 1.1em;
+  text-align: right;
+  color: black;
+}
+
+.menu-toggle {
+  padding: 2em;
+  position: absolute;
+  top: .9em;
+  right : 5em;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  display: block;
+  background: #5cb85c;
+  height: 3px;
+  width: 1.85em;
+  border-radius: 3px;
+  transition: all ease-in-out 500ms;
+  -moz-transition:all ease-in-out 500ms;
+  -webkit-transition: all ease-in-out 500ms;
+  -o-transition:all ease-in-out 500ms;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.open .hamburger {
+  transform: rotate(135deg);
+}
+
+.open .hamburger::before {
+  opacity: 0;
+}
+
+.open .hamburger::after {
+  transform: translateY(-3px) rotate(-270deg);
+}
+
+@media (min-width: 1200px) {
+
+  .menu-toggle {
+    display: none;
+  }
+  .site-nav {
+    height: auto;
+    position: relative;
+    background: transparent;
+    float: right;
+    -webkit-clip-path: none;
+  }
+  .site-nav--open {
+    -webkit-clip-path: circle(150% at top right);
+
+    display: block;
+  }
+  .site-nav li {
+    display: inline-block;
+    border: none;
+  }
+
+  .site-nav a {
+    padding: 0;
+    margin-left: 4em;
+
+  }
+
+  .site-nav a:hover,
+  .site-nav a:focus {
+    background: transparent;
+  }
+
+  .site-nav--icon {
+    display: none;
+  }
+
+}
+
+
+

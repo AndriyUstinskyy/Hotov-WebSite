@@ -1,0 +1,244 @@
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans|Comfortaa|Didact+Gothic|Jura|Tenor+Sans);
+
+.main{
+  background: url(../img/fon.jpeg);
+  z-index:3;
+  position: relative;
+
+}
+@media(max-width: 1200px){
+  .main{
+    zoom:80%;
+  }
+}
+html{
+  min-height: 1050px;
+}
+section{
+  background: #e6e6e6;
+  opacity: 0.7;
+  height: 773px;
+  position: relative;
+  z-index: 3;
+
+}
+
+.footer{
+  height: 210px;
+  margin-bottom: 0px;
+}
+.about {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+
+  padding-top: 80px;
+  padding-bottom: 200px;
+  height: 160px;
+}
+
+@media (max-width:890px)  {
+  .back{
+    height: 379px;
+    background: #f0f0f0;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+
+.about__bigtext {
+  position: absolute;
+  bottom: 0;
+  color: #f5f4f4;
+  font-family: 'Didact Gothic', sans-serif ;
+  font-size: 250px;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 181px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.about__image {
+  position: relative;
+  z-index: 2;
+}
+
+.about__image img {
+  width: 520px;
+  height: 426px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about__image::after {
+  content: ' ';
+  width: 522px;
+  height: 418px;
+  border: 3px solid #5cb85c;
+  position: absolute;
+  border-radius: 10px;
+  top: 57px;
+  left: -43px;
+  z-index: -1
+}
+
+.about__content {
+  max-width: 665px;
+  margin-left: 53px;
+
+}
+
+.about__topline {
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap
+}
+
+.about__topline--wrapper {
+  width: 50px;
+  height: 3px;
+  border-radius: 10px;
+}
+
+.about__topline--line {
+  width: 100%;
+  height: 100%;
+  background: #5cb85c;
+  border-radius: 10px;
+}
+
+.about__topline--text {
+  color: #5cb85c;
+  font-family: 'Didact Gothic', sans-serif ;
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 12px
+}
+
+.about__title {
+  color: #000000;
+  font-family: 'Didact Gothic', sans-serif ;
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 23px;
+  max-width: 540px;
+}
+
+.about__line {
+  margin-top: 20px;
+  width: 90px;
+  height: 3px;
+  background-color: #5cb85c;
+  border-radius: 10px;
+}
+
+.about__text {
+  position: absolute;
+  height: 300px;
+  margin-top: 47px;
+  color: #000000;
+  font-family: 'Didact Gothic', sans-serif ;
+  font-size: 18px;
+  font-weight: 400;
+  overflow-y:auto;
+  padding-right: 80px;
+
+}
+
+.about__text::-webkit-scrollbar {
+  width: 3px
+}
+
+.about__text::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+.about__text::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+.header__line {
+  width: 158px;
+  height: 5px;
+  background-color: #5cb85c;
+  margin-top: 40px;
+  position:absolute;
+  z-index: 2;
+  top:1%;
+  right:49%;
+  border-radius: 20px;
+}
+
+.header__title {
+  color: black;
+  font-family: 'Didact Gothic', sans-serif ;
+  font-size: 48px;
+  font-weight: 500;
+  margin-top: 50px;
+  position:absolute;
+  z-index: 2;
+  top:1%;
+  right:45%;
+}
+
+.header__bigtext {
+  margin-top: 0px;
+  position: relative;
+  overflow: hidden;
+  height: 100px;
+  width: 100%;
+  z-index: 2;
+}
+
+.header__bigtext--text {
+  position: absolute;
+  z-index: 2;
+  top: -50px;
+  width: 100%;
+  text-align: center;
+  opacity: 0.25;
+  color: #e1edf7;
+  font-family: 'Didact Gothic', sans-serif ;
+  font-size: 250px;
+  font-weight: 700;
+  text-transform: uppercase
+}

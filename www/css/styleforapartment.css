@@ -1,0 +1,200 @@
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans|Comfortaa|Didact+Gothic|Jura|Tenor+Sans);
+.fon{
+	background: url(../img/fon.jpeg);
+	width: 100%;
+	height:750px;
+	max-height:775px;
+	color: black;
+	overflow: hidden;
+}
+/* Left Sidebar
+-----------------------------------------------------------------------------*/
+.left-sidebar {
+
+	margin-left: 65%;
+	position: relative;
+	top:130px;
+	width: 100%;
+	/*padding: 10px;*/
+	/*height: 150px;*/
+	color: #e6e6e6;
+	font-size: 17px;
+	padding-left: 5px;
+
+}
+
+
+
+/* Right Sidebar
+-----------------------------------------------------------------------------*/
+.right-sidebar{
+	float: left;
+	background: #e6e6e6;
+	opacity: 0.7;
+	width: calc(100% - 100px);
+	max-width:950px;
+	height: 650px;
+	overflow:hidden;
+	border-radius: 20px;
+}
+.map {
+	position: relative;
+	top: 50px;
+	left: 8%;
+	width: 100%;
+	max-width: 100%;
+	overflow: hidden;
+
+
+}
+@media (max-width: 1235px) {
+	.right-sidebar{
+		max-width: 85%;
+		max-height: 75%;
+		zoom:75%;
+		position: absolute;
+	}
+	.map{
+		position: relative;
+		top:18%;
+		max-width: 100%;
+		zoom:110%;
+
+	}
+}
+@media (max-width: 750px) {
+	.right-sidebar{
+		max-width: 100%;
+		max-height: 600px;
+		zoom:48%;
+		position: absolute;
+		top:20px;
+		left:54px;
+		border-radius: 20px;
+	}
+	.map{
+		max-width: 100%;
+		zoom:88%;
+	}
+}
+
+
+a.button27 {
+	position: relative;
+	display: inline-block;
+	width: 3em;
+	height: 3em;
+	line-height: 3em;
+	vertical-align: middle;
+	text-align: center;
+	text-decoration: none;
+	color: #3e4e5c;
+	outline: none;
+	border-radius: 5px;
+	box-shadow: 0 0 0 1px #ddd inset, 0 1px 1px #fff;
+	font-family: "Didact Gothic",sans-serif;
+
+}
+
+
+a.button27:hover {
+	background: #dcdcdc linear-gradient(#fff, #dcdcdc);
+	box-shadow: 0 0 0 1px #aaa inset, 0 1px 1px #aaa;
+}
+/*.button27:active {*/
+/*background: #1a1a1a;*/
+/*color: red;*/
+/*}*/
+a.button27.active{
+	background: #dcdcdc linear-gradient(#fff, #dcdcdc);
+	box-shadow: 0 0 0 1px #aaa inset, 0 1px 1px #aaa;
+}
+/*.button27:active {*/
+/*background: #1a1a1a;*/
+/*color: red;*/
+/*}*/
+
+.fon-img{
+	position: relative;
+	top:-400px;
+	right:-250px;
+}
+
+
+.compas{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	max-width: 350px;
+	max-height: 350px;
+	opacity: 0.7;
+	right: 150px;
+	top:50px;
+	float: right;
+}
+
+
+
+hr {
+	border: none; /* Убираем границу */
+	background-color: #e6e6e6; /* Цвет линии */
+	height: 1px; /* Толщина линии */
+	width: 30%;
+	margin-bottom: 30px;
+	margin-left: 20px;
+}
+
+@media screen and (max-width: 1235px) {
+	.left-sidebar{
+		max-width: 100%;
+		position: relative;
+		top: -80px;
+		right:-60px;
+		float: left;
+
+	}
+	.floorChoseButtonBox{
+		position: fixed;
+		top: 580px;
+		right:120px;
+	}
+	.sectionChoseButtonBox{
+		position: fixed;
+		top: 630px;
+		right:200px;
+	}
+
+	.button27{
+		zoom:80%;
+		display: inline-grid;
+		float: top;
+	}
+	hr{
+		display: none;
+	}
+
+}
+@media (max-width: 750px) {
+	.floorChoseButtonBox{
+		position: relative;
+		top: 350px;
+		right:290px;
+		height: 100%;
+		width: 360px;
+	}
+	.sectionChoseButtonBox{
+		position: relative;
+		top: 520px;
+		right:290px;
+		height: 100%;
+		width: 350px;
+	}
+}
+
+
+@media (max-width: 1350px){
+	.compas{
+		display: none;
+	}
+}
+
